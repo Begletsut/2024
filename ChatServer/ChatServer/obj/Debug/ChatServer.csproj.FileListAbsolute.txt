@@ -1,0 +1,10 @@
+D:\SVN\helixteamhub\2024\ChatServer\ChatServer\bin\Debug\ChatServer.exe.config
+D:\SVN\helixteamhub\2024\ChatServer\ChatServer\bin\Debug\ChatServer.exe
+D:\SVN\helixteamhub\2024\ChatServer\ChatServer\bin\Debug\ChatServer.pdb
+D:\SVN\helixteamhub\2024\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.AssemblyReference.cache
+D:\SVN\helixteamhub\2024\ChatServer\ChatServer\obj\Debug\ChatServer.Form1.resources
+D:\SVN\helixteamhub\2024\ChatServer\ChatServer\obj\Debug\ChatServer.Properties.Resources.resources
+D:\SVN\helixteamhub\2024\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.GenerateResource.cache
+D:\SVN\helixteamhub\2024\ChatServer\ChatServer\obj\Debug\ChatServer.csproj.CoreCompileInputs.cache
+D:\SVN\helixteamhub\2024\ChatServer\ChatServer\obj\Debug\ChatServer.exe
+D:\SVN\helixteamhub\2024\ChatServer\ChatServer\obj\Debug\ChatServer.pdb
