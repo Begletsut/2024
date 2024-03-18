@@ -1,0 +1,2863 @@
+{
+  "paper": {
+    "name": "A4",
+    "leftMargin": 0.5,
+    "rightMargin": 0.5,
+    "topMargin": 0.5,
+    "bottomMargin": 0.5,
+    "isPortriat": false
+  },
+  "modelVersion": 2.01,
+  "defaultSchema": "Default",
+  "server": {
+    "objectType": "Server_LOGICAL",
+    "name": "Default",
+    "schemas": [
+      {
+        "objectType": "Schema_LOGICAL",
+        "name": "Default",
+        "tables": [
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Nmn_Operations",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Name",
+                "type": "CHAR VARYING",
+                "length": 48,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Name"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Nmn_Stocks_Log_Stocks_1 Copy 1",
+                "fields": [
+                  "Id"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Stocks",
+                "referencedFields": [
+                  "TypeOperation"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Nmn_Stocks",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Name",
+                "type": "CHAR VARYING",
+                "length": 48,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Name"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Nmn_Kontragents",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Name",
+                "type": "CHAR VARYING",
+                "length": 48,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Name"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Nmn_Courier",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Name",
+                "type": "CHAR VARYING",
+                "length": 48,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Name"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Log_Invoices Copy 1",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DtTm",
+                "type": "TIMESTAMP",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "DtTm"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdKontragent",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdKontragent"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdOrderDetail",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdOrderDetail"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "InvoiceType",
+                "type": "SMALLINT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "Type: input/output, or IdType to Id of TypeTable",
+                "oldName": "InvoiceType"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Number",
+                "type": "CHAR VARYING",
+                "length": 48,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Number"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "TotalPrice",
+                "type": "FLOAT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "Total sum of invoice price",
+                "oldName": "TotalPrice"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Log_Invoices_Nmn_Kontragents_1 Copy 2",
+                "fields": [
+                  "IdKontragent"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Nmn_Kontragents",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "list of matts",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdStocks",
+                "type": "INT",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "array with Ids of matts",
+                "oldName": "IdStocks"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "QtyStock",
+                "type": "INT",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "array with quantity of matts",
+                "oldName": "QtyStock"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_list of matts_Stocks_1",
+                "fields": [
+                  "QtyStock"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Stocks",
+                "referencedFields": [
+                  "QuantityToChange"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_list of matts_Log_DeliveryDetails_1",
+                "fields": [
+                  "IdStocks"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Log_ShipmentsDetails",
+                "referencedFields": [
+                  "IdLogStock"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_list of matts_Log_DeliveryDetails_2",
+                "fields": [
+                  "QtyStock"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Log_ShipmentsDetails",
+                "referencedFields": [
+                  "Quantity"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_list of matts_Log_InvoiceDetails_1",
+                "fields": [
+                  "IdStocks"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Log_InvoicesDetails",
+                "referencedFields": [
+                  "IdLogStock"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "List_Doc_Delivery",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdDocOwner",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdDocOwner"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Name",
+                "type": "CHAR VARYING",
+                "length": 48,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Name"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Filename",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Filename"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_List_Doc_Delivery_Log_Delivery_1",
+                "fields": [
+                  "IdDocOwner"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Shipments",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "List_Doc_Orders",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdDocOwner",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdDocOwner"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Name",
+                "type": "CHAR VARYING",
+                "length": 48,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Name"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Filename",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Filename"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_List_Dicuments_LogOrders_Log_Orders_1",
+                "fields": [
+                  "IdDocOwner"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Demands",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Log_ShipmentsDetails",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdDelivery",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdDelivery"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdOrderDetail",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdOrderDetail"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DtTm",
+                "type": "TIMESTAMP",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "DtTm"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Log_InvoicesDetails",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdDeliveryDetail",
+                "type": "INT",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdDeliveryDetail"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdInvoice",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdInvoice"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdOrderDetail",
+                "type": "INT",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdOrderDetail"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DtTm",
+                "type": "TIMESTAMP",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "DtTm"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdOrder",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdOrder"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DtTm",
+                "type": "TIMESTAMP",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "DtTm"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Stocks",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Name",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Name"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Quantity",
+                "type": "INTEGER",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Quantity"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Documents",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdInvoice",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdInvoice"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdShipment",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdShipment"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdDemand",
+                "type": "INTEGER",
+                "length": 48,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdDemand"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Type",
+                "type": "INTEGER",
+                "length": 1,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Type"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DtTm",
+                "type": "TIMESTAMP",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "DtTm"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "FileName",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "FileName"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Documents_Shipments_1",
+                "fields": [
+                  "IdShipment"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Shipments",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Documents_Invoices_1",
+                "fields": [
+                  "IdInvoice"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Invoices",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Documents_Demands_1",
+                "fields": [
+                  "IdDemand"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Demands",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Invoices",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdKontragentFrom",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdKontragentFrom"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdKontragentTo",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdKontragentTo"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdShipment",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdShipment"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdDemand",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdDemand"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DtTm",
+                "type": "TIMESTAMP",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "Selected by user, the invoice date",
+                "oldName": "DtTm"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "TypeInvoice",
+                "type": "SMALLINT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "TypeInvoice"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Number",
+                "type": "CHAR VARYING",
+                "length": 48,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Number"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "TotalPrice",
+                "type": "FLOAT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "Total sum of invoice price",
+                "oldName": "TotalPrice"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "FileName",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "FileName"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Invoices_Nmn_Kontragents_1",
+                "fields": [
+                  "IdKontragentTo"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Nmn_Kontragents",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Invoices_Nmn_Kontragents_2",
+                "fields": [
+                  "IdKontragentFrom"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Nmn_Kontragents",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Invoices_Shipments_1",
+                "fields": [
+                  "IdShipment"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Shipments",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Invoices_Demands_1",
+                "fields": [
+                  "IdDemand"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Demands",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Shipments",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdKontragentFrom",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdKontragentFrom"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdKontragentTo",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdKontragentTo"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdCourier",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdCourier"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdDemand",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdDemand"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Waybill",
+                "type": "CHAR VARYING",
+                "length": 48,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Waybill"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DtTm",
+                "type": "TIMESTAMP",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "DtTm"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Status",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Status"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Shipments_Couriers_1",
+                "fields": [
+                  "IdCourier"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Couriers",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Shipments_Nmn_Kontragents_1",
+                "fields": [
+                  "IdKontragentFrom"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Nmn_Kontragents",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Shipments_Nmn_Kontragents_2",
+                "fields": [
+                  "IdKontragentTo"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Nmn_Kontragents",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Shipments_Demands_1",
+                "fields": [
+                  "IdDemand"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Demands",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Demands",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdKontragent",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdKontragent"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DtTm",
+                "type": "TIMESTAMP",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "DtTm"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "TypeDemand",
+                "type": "SMALLINT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "Type: input/output, or IdType to Id of TypeTable",
+                "oldName": "TypeDemand"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Number",
+                "type": "CHAR VARYING",
+                "length": 48,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Number"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "TotalPrice",
+                "type": "FLOAT",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "Total sum of invoice price",
+                "oldName": "TotalPrice"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Description",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Description"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_Demands_Nmn_Kontragents_1",
+                "fields": [
+                  "IdKontragent"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Nmn_Kontragents",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "StocksDetails",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdStocks",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdStocks"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdInvoice",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdInvoice"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdShipment",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdShipment"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "IdDemand",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "IdDemand"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "DtTm",
+                "type": "TIMESTAMP",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "DtTm"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "QuantityChanged",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "QuantityChanged"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Quantity",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Quantity"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "ChangeLog",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "ChangeLog"
+              }
+            ],
+            "foreignKeys": [
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_StocksDetails_Shipments_1",
+                "fields": [
+                  "IdShipment"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Shipments",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_StocksDetails_Invoices_1",
+                "fields": [
+                  "IdInvoice"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Invoices",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_StocksDetails_Stocks_1",
+                "fields": [
+                  "IdStocks"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Stocks",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              },
+              {
+                "objectType": "ForeignKey_LOGICAL",
+                "name": "fk_StocksDetails_Demands_1",
+                "fields": [
+                  "IdDemand"
+                ],
+                "referencedSchema": "Default",
+                "referencedTable": "Demands",
+                "referencedFields": [
+                  "Id"
+                ],
+                "sourceCardinality": "NoneRelationship",
+                "targetCardinality": "NoneRelationship",
+                "comment": "",
+                "oldName": ""
+              }
+            ],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          },
+          {
+            "objectType": "Table_LOGICAL",
+            "name": "Couriers",
+            "comment": "",
+            "oldName": "",
+            "fields": [
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Id",
+                "type": "INTEGER",
+                "length": 0,
+                "decimals": 0,
+                "isNullable": false,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Id"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Name",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Name"
+              },
+              {
+                "objectType": "TableField_LOGICAL",
+                "name": "Link",
+                "type": "CHAR VARYING",
+                "length": 255,
+                "decimals": 0,
+                "isNullable": true,
+                "defaultType": "None",
+                "defaultValue": "",
+                "comment": "",
+                "oldName": "Link"
+              }
+            ],
+            "foreignKeys": [],
+            "indexes": [],
+            "uniques": [],
+            "primaryKey": {
+              "objectType": "PrimaryKey_LOGICAL",
+              "name": "",
+              "fields": [
+                "Id"
+              ],
+              "oldName": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "diagrams": [
+    {
+      "name": "Diagram 1",
+      "paperWidth": 1,
+      "paperHeight": 1,
+      "tableFont": "Arial Unicode MS",
+      "tableFontSize": 14,
+      "isBalckWhite": false,
+      "showDBSchemaName": false,
+      "showViewRelations": true,
+      "notation": "default",
+      "showFieldComment": false,
+      "showTableComment": false,
+      "shapes": [
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "Nmn_Kontragents",
+          "x": 780,
+          "y": 30,
+          "width": 200,
+          "height": 110,
+          "isBold": false,
+          "titleColor": {
+            "r": 255,
+            "g": 255,
+            "b": 132,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "Invoices",
+          "x": 520,
+          "y": 10,
+          "width": 200,
+          "height": 260,
+          "isBold": false,
+          "titleColor": {
+            "r": 255,
+            "g": 157,
+            "b": 157,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "Demands",
+          "x": 520,
+          "y": 490,
+          "width": 200,
+          "height": 180,
+          "isBold": false,
+          "titleColor": {
+            "r": 255,
+            "g": 0,
+            "b": 128,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "Shipments",
+          "x": 520,
+          "y": 270,
+          "width": 200,
+          "height": 220,
+          "isBold": false,
+          "titleColor": {
+            "r": 200,
+            "g": 255,
+            "b": 160,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "Documents",
+          "x": 220,
+          "y": 0,
+          "width": 200,
+          "height": 200,
+          "isBold": false,
+          "titleColor": {
+            "r": 255,
+            "g": 214,
+            "b": 147,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "Stocks",
+          "x": 0,
+          "y": 230,
+          "width": 200,
+          "height": 120,
+          "isBold": false,
+          "titleColor": {
+            "r": 255,
+            "g": 200,
+            "b": 255,
+            "a": 1
+          }
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "StocksDetails",
+          "x": 220,
+          "y": 210,
+          "width": 200,
+          "height": 220,
+          "isBold": false,
+          "titleColor": {
+            "r": 255,
+            "g": 200,
+            "b": 255,
+            "a": 1
+          }
+        },
+        {
+          "type": "note",
+          "name": "Note 2",
+          "x": 50,
+          "y": 0,
+          "width": 170,
+          "height": 90,
+          "text": "Customs, mito, protocols, Payments\r\nScanned order doc",
+          "style": "note",
+          "noteColor": {
+            "r": 255,
+            "g": 232,
+            "b": 107,
+            "a": 1
+          },
+          "fontName": "Arial Unicode MS",
+          "fontSize": 14,
+          "isFontBold": false,
+          "isFontItalic": false
+        },
+        {
+          "type": "table",
+          "schemaName": "Default",
+          "tableName": "Couriers",
+          "x": 780,
+          "y": 330,
+          "width": 200,
+          "height": 100,
+          "isBold": false,
+          "titleColor": {
+            "r": 255,
+            "g": 255,
+            "b": 132,
+            "a": 1
+          }
+        },
+        {
+          "type": "note",
+          "name": "Note 1",
+          "x": 720,
+          "y": 560,
+          "width": 180,
+          "height": 100,
+          "text": "Demands from clients, requests",
+          "style": "note",
+          "noteColor": {
+            "r": 255,
+            "g": 232,
+            "b": 107,
+            "a": 1
+          },
+          "fontName": "Arial Unicode MS",
+          "fontSize": 14,
+          "isFontBold": false,
+          "isFontItalic": false
+        }
+      ],
+      "layers": [],
+      "relations": [
+        {
+          "name": "fk_Invoices_Nmn_Kontragents_1",
+          "sourceTableName": "Invoices",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 735,
+              "y": 90
+            },
+            {
+              "x": 760,
+              "y": 90
+            },
+            {
+              "x": 760,
+              "y": 70
+            },
+            {
+              "x": 765,
+              "y": 70
+            }
+          ],
+          "label": {
+            "x": 725,
+            "y": 52,
+            "width": 221,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_StocksDetails_Shipments_1",
+          "sourceTableName": "StocksDetails",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "lineColor": {
+            "r": 200,
+            "g": 255,
+            "b": 160,
+            "a": 1
+          },
+          "vertices": [
+            {
+              "x": 435,
+              "y": 310
+            },
+            {
+              "x": 500,
+              "y": 310
+            },
+            {
+              "x": 500,
+              "y": 310
+            },
+            {
+              "x": 505,
+              "y": 310
+            }
+          ],
+          "label": {
+            "x": 425,
+            "y": 272,
+            "width": 205,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_Documents_Shipments_1",
+          "sourceTableName": "Documents",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "lineColor": {
+            "r": 200,
+            "g": 255,
+            "b": 160,
+            "a": 1
+          },
+          "vertices": [
+            {
+              "x": 435,
+              "y": 80
+            },
+            {
+              "x": 500,
+              "y": 80
+            },
+            {
+              "x": 500,
+              "y": 310
+            },
+            {
+              "x": 505,
+              "y": 310
+            }
+          ],
+          "label": {
+            "x": 425,
+            "y": 42,
+            "width": 194,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_Documents_Invoices_1",
+          "sourceTableName": "Documents",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "lineColor": {
+            "r": 255,
+            "g": 157,
+            "b": 157,
+            "a": 1
+          },
+          "vertices": [
+            {
+              "x": 435,
+              "y": 60
+            },
+            {
+              "x": 450,
+              "y": 60
+            },
+            {
+              "x": 450,
+              "y": 60
+            },
+            {
+              "x": 505,
+              "y": 60
+            }
+          ],
+          "label": {
+            "x": 425,
+            "y": 22,
+            "width": 177,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_StocksDetails_Invoices_1",
+          "sourceTableName": "StocksDetails",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "lineColor": {
+            "r": 255,
+            "g": 157,
+            "b": 157,
+            "a": 1
+          },
+          "vertices": [
+            {
+              "x": 435,
+              "y": 290
+            },
+            {
+              "x": 450,
+              "y": 290
+            },
+            {
+              "x": 450,
+              "y": 60
+            },
+            {
+              "x": 505,
+              "y": 60
+            }
+          ],
+          "label": {
+            "x": 425,
+            "y": 252,
+            "width": 188,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_Shipments_Couriers_1",
+          "sourceTableName": "Shipments",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 735,
+              "y": 370
+            },
+            {
+              "x": 770,
+              "y": 370
+            },
+            {
+              "x": 770,
+              "y": 370
+            },
+            {
+              "x": 765,
+              "y": 370
+            }
+          ],
+          "label": {
+            "x": 725,
+            "y": 332,
+            "width": 172,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_Invoices_Nmn_Kontragents_2",
+          "sourceTableName": "Invoices",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 735,
+              "y": 70
+            },
+            {
+              "x": 760,
+              "y": 70
+            },
+            {
+              "x": 760,
+              "y": 70
+            },
+            {
+              "x": 765,
+              "y": 70
+            }
+          ],
+          "label": {
+            "x": 725,
+            "y": 32,
+            "width": 221,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_Invoices_Shipments_1",
+          "sourceTableName": "Invoices",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "lineColor": {
+            "r": 200,
+            "g": 255,
+            "b": 160,
+            "a": 1
+          },
+          "vertices": [
+            {
+              "x": 505,
+              "y": 110
+            },
+            {
+              "x": 500,
+              "y": 110
+            },
+            {
+              "x": 500,
+              "y": 310
+            },
+            {
+              "x": 505,
+              "y": 310
+            }
+          ],
+          "label": {
+            "x": 521,
+            "y": 82,
+            "width": 171,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_StocksDetails_Stocks_1",
+          "sourceTableName": "StocksDetails",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 205,
+              "y": 270
+            },
+            {
+              "x": 210,
+              "y": 270
+            },
+            {
+              "x": 210,
+              "y": 270
+            },
+            {
+              "x": 215,
+              "y": 270
+            }
+          ],
+          "label": {
+            "x": 39,
+            "y": 232,
+            "width": 176,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_Shipments_Nmn_Kontragents_1",
+          "sourceTableName": "Shipments",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 735,
+              "y": 330
+            },
+            {
+              "x": 760,
+              "y": 330
+            },
+            {
+              "x": 760,
+              "y": 70
+            },
+            {
+              "x": 765,
+              "y": 70
+            }
+          ],
+          "label": {
+            "x": 725,
+            "y": 292,
+            "width": 238,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_Shipments_Nmn_Kontragents_2",
+          "sourceTableName": "Shipments",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 735,
+              "y": 350
+            },
+            {
+              "x": 760,
+              "y": 350
+            },
+            {
+              "x": 760,
+              "y": 70
+            },
+            {
+              "x": 765,
+              "y": 70
+            }
+          ],
+          "label": {
+            "x": 725,
+            "y": 312,
+            "width": 238,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_StocksDetails_Demands_1",
+          "sourceTableName": "StocksDetails",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "lineColor": {
+            "r": 255,
+            "g": 0,
+            "b": 128,
+            "a": 1
+          },
+          "vertices": [
+            {
+              "x": 435,
+              "y": 330
+            },
+            {
+              "x": 470,
+              "y": 330
+            },
+            {
+              "x": 470,
+              "y": 530
+            },
+            {
+              "x": 505,
+              "y": 530
+            }
+          ],
+          "label": {
+            "x": 425,
+            "y": 292,
+            "width": 198,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_Documents_Demands_1",
+          "sourceTableName": "Documents",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "lineColor": {
+            "r": 255,
+            "g": 0,
+            "b": 128,
+            "a": 1
+          },
+          "vertices": [
+            {
+              "x": 435,
+              "y": 100
+            },
+            {
+              "x": 470,
+              "y": 100
+            },
+            {
+              "x": 470,
+              "y": 530
+            },
+            {
+              "x": 505,
+              "y": 530
+            }
+          ],
+          "label": {
+            "x": 425,
+            "y": 62,
+            "width": 187,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_Invoices_Demands_1",
+          "sourceTableName": "Invoices",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "lineColor": {
+            "r": 255,
+            "g": 0,
+            "b": 128,
+            "a": 1
+          },
+          "vertices": [
+            {
+              "x": 505,
+              "y": 130
+            },
+            {
+              "x": 470,
+              "y": 130
+            },
+            {
+              "x": 470,
+              "y": 530
+            },
+            {
+              "x": 505,
+              "y": 530
+            }
+          ],
+          "label": {
+            "x": 521,
+            "y": 132,
+            "width": 164,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_Shipments_Demands_1",
+          "sourceTableName": "Shipments",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "lineColor": {
+            "r": 255,
+            "g": 0,
+            "b": 128,
+            "a": 1
+          },
+          "vertices": [
+            {
+              "x": 505,
+              "y": 390
+            },
+            {
+              "x": 470,
+              "y": 390
+            },
+            {
+              "x": 470,
+              "y": 530
+            },
+            {
+              "x": 505,
+              "y": 530
+            }
+          ],
+          "label": {
+            "x": 521,
+            "y": 392,
+            "width": 181,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        },
+        {
+          "name": "fk_Demands_Nmn_Kontragents_1",
+          "sourceTableName": "Demands",
+          "sourceSchemaName": "Default",
+          "lineWidth": 1,
+          "visible": true,
+          "vertices": [
+            {
+              "x": 735,
+              "y": 550
+            },
+            {
+              "x": 760,
+              "y": 550
+            },
+            {
+              "x": 760,
+              "y": 70
+            },
+            {
+              "x": 765,
+              "y": 70
+            }
+          ],
+          "label": {
+            "x": 725,
+            "y": 512,
+            "width": 231,
+            "height": 30,
+            "fontName": "Arial Unicode MS",
+            "fontSize": 14,
+            "fontColor": {
+              "r": 51,
+              "g": 51,
+              "b": 51,
+              "a": 1
+            },
+            "isFontBold": false,
+            "isFontItalic": false,
+            "isVisible": false
+          }
+        }
+      ],
+      "viewRelations": []
+    }
+  ]
+}
